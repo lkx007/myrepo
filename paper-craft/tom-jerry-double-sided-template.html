@@ -24,152 +24,153 @@
   <main>
     <section class="toolbar" aria-label="中文打印说明">
       <h1>竖版双面猫鼠剪纸模板</h1>
-      <p>你说得对，猫应该竖着排。新版改成竖版：猫用高度表达头、身体、脚，老鼠放在脚边，这样半张 A4 的宽度不会被横向挤爆。</p>
-      <p>做法：左边正面、右边镜像背面；沿蓝色虚线对折，在灰色区涂胶，对齐定位点后，只剪米黄色外轮廓粗黑线。</p>
+      <p>这版按你给的参考图改：左边是正面，猫在下方仰头伸手抓，老鼠在上方躲开；右边是左边的镜像，用来做背面。</p>
+      <p>打印后沿蓝色中线对折，在灰色区域涂胶，对齐定位点，最后沿米黄色外轮廓粗黑线剪下。</p>
       <ul class="steps">
-        <li><strong>打印：</strong>选择 A4、100% 或“实际大小”。</li>
-        <li><strong>对折：</strong>沿蓝色虚线压痕，让印刷面朝外。</li>
-        <li><strong>涂胶：</strong>灰色区域薄涂胶，对齐圆形定位标记。</li>
-        <li><strong>剪切：</strong>只剪最外侧粗黑线，红色虚线可不刻。</li>
-        <li><strong>成品：</strong>猫是竖向主体，老鼠在脚边形成追逐关系。</li>
+        <li><strong>左边：</strong>正面图案。</li>
+        <li><strong>右边：</strong>镜像左边，做背面。</li>
+        <li><strong>红框：</strong>半张纸的可用区域参考。</li>
+        <li><strong>粗黑线：</strong>最终剪切线。</li>
+        <li><strong>红虚线：</strong>可选细节，新手可以不刻。</li>
       </ul>
       <button type="button" onclick="window.print()">打印模板</button>
-      <p class="note">这是可剪纸艺模板，角色细节靠彩色打印保留，外轮廓保持一整块连续结构。</p>
+      <p class="note">这是单文件 HTML，下载后直接用浏览器打开即可。</p>
     </section>
 
     <section class="sheet" aria-label="A4 竖版双面剪纸模板">
       <svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" role="img" aria-labelledby="svg-title svg-desc">
-        <title id="svg-title">Vertical double-sided cat and mouse paper craft template</title>
-        <desc id="svg-desc">A4 printable double-sided paper craft template. A tall gray cat reaches down toward a small brown mouse near its feet. Cut the tight outside contour after folding and gluing.</desc>
+        <title id="svg-title">Vertical double-sided cat reaching for mouse paper craft template</title>
+        <desc id="svg-desc">A4 printable double-sided paper craft template. Left panel is the front; right panel is a mirrored copy. Cut the cream outer contour after folding and gluing.</desc>
         <defs>
           <style>
             .page { fill: #fff; }
-            .headline { font: 700 5px Arial, sans-serif; fill: #111; }
+            .panel { fill: none; stroke: #f00; stroke-width: 0.28; }
+            .headline { font: 700 4.6px Arial, sans-serif; fill: #111; }
             .label { font: 3px Arial, sans-serif; fill: #111; }
-            .tiny { font: 2.35px Arial, sans-serif; fill: #333; }
-            .backing { fill: #fff0c2; stroke: #111; stroke-width: 1.2; stroke-linejoin: round; stroke-linecap: round; }
-            .cat { fill: #7f98a7; stroke: #111; stroke-width: 0.32; stroke-linejoin: round; stroke-linecap: round; }
-            .cat-dark { fill: #6d8794; stroke: #111; stroke-width: 0.24; stroke-linejoin: round; stroke-linecap: round; }
-            .cat-light { fill: #fff7ec; stroke: #111; stroke-width: 0.22; stroke-linejoin: round; stroke-linecap: round; }
-            .cat-ear { fill: #ee9cac; stroke: #111; stroke-width: 0.2; stroke-linejoin: round; }
-            .cat-eye { fill: #ffe36b; stroke: #111; stroke-width: 0.2; }
-            .mouse { fill: #a86434; stroke: #111; stroke-width: 0.28; stroke-linejoin: round; stroke-linecap: round; }
-            .mouse-light { fill: #f3c184; stroke: #111; stroke-width: 0.2; stroke-linejoin: round; stroke-linecap: round; }
-            .mouse-ear { fill: #efb187; stroke: #111; stroke-width: 0.2; }
-            .line { fill: none; stroke: #111; stroke-width: 0.22; stroke-linecap: round; stroke-linejoin: round; }
-            .thin { fill: none; stroke: #111; stroke-width: 0.16; stroke-linecap: round; }
-            .motion { fill: none; stroke: #5a7fa6; stroke-width: 0.35; stroke-linecap: round; stroke-dasharray: 1.2 0.9; }
-            .optional { fill: none; stroke: #c9352c; stroke-width: 0.42; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1.6 1.1; }
+            .tiny { font: 2.25px Arial, sans-serif; fill: #333; }
+            .backing { fill: #fff1ca; stroke: #111; stroke-width: 1.1; stroke-linejoin: round; stroke-linecap: round; }
+            .cat { fill: #587188; stroke: #111; stroke-width: 0.32; stroke-linejoin: round; stroke-linecap: round; }
+            .cat-dark { fill: #405a70; stroke: #111; stroke-width: 0.22; stroke-linejoin: round; stroke-linecap: round; }
+            .cat-light { fill: #f6f1e8; stroke: #111; stroke-width: 0.22; stroke-linejoin: round; stroke-linecap: round; }
+            .cat-ear { fill: #f39aa8; stroke: #111; stroke-width: 0.2; stroke-linejoin: round; }
+            .cat-eye { fill: #f5e25d; stroke: #111; stroke-width: 0.2; }
+            .glove { fill: #fff; stroke: #111; stroke-width: 0.28; stroke-linejoin: round; stroke-linecap: round; }
+            .mouse { fill: #a35f2f; stroke: #111; stroke-width: 0.28; stroke-linejoin: round; stroke-linecap: round; }
+            .mouse-light { fill: #f0bd82; stroke: #111; stroke-width: 0.2; stroke-linejoin: round; stroke-linecap: round; }
+            .mouse-ear { fill: #efaf88; stroke: #111; stroke-width: 0.2; }
+            .line { fill: none; stroke: #111; stroke-width: 0.2; stroke-linecap: round; stroke-linejoin: round; }
+            .thin { fill: none; stroke: #111; stroke-width: 0.15; stroke-linecap: round; }
+            .motion { fill: none; stroke: #666; stroke-width: 0.3; stroke-linecap: round; stroke-dasharray: 2 1.2; }
+            .optional { fill: none; stroke: #d22; stroke-width: 0.38; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1.5 1.1; }
             .fold { fill: none; stroke: #2368c9; stroke-width: 0.5; stroke-dasharray: 3 2; }
             .glue { fill: #d9d9d9; stroke: #777; stroke-width: 0.25; stroke-dasharray: 1.3 1.1; opacity: 0.78; }
-            .mark { fill: none; stroke: #111; stroke-width: 0.26; }
+            .mark { fill: none; stroke: #111; stroke-width: 0.24; }
           </style>
 
           <g id="registration-mark">
-            <circle class="mark" cx="0" cy="0" r="2.1"/>
+            <circle class="mark" cx="0" cy="0" r="2"/>
             <path class="mark" d="M-3 0H3M0 -3V3"/>
           </g>
 
-          <g id="vertical-chase">
+          <g id="reaching-scene">
             <path class="backing" d="
-              M44 28
-              C53 18 72 22 77 36
-              L88 27
-              C94 43 90 58 80 68
-              C91 77 95 92 90 106
-              C98 116 98 133 88 145
-              C96 154 94 169 82 175
-              C81 188 70 198 56 197
-              C43 196 34 186 34 174
-              C22 168 20 153 29 144
-              C19 132 20 114 31 104
-              C25 91 29 76 39 68
-              C31 56 31 41 44 28
+              M56 8
+              C70 3 83 10 85 24
+              C98 24 107 36 101 49
+              C112 61 106 77 92 79
+              C90 92 82 104 70 111
+              C75 122 73 135 64 143
+              C72 151 69 165 58 170
+              C60 183 49 194 35 190
+              C26 187 22 179 23 170
+              C9 166 5 151 15 141
+              C6 132 7 118 19 111
+              C13 101 16 89 28 84
+              C20 74 23 60 34 55
+              C31 44 36 34 47 30
+              C44 21 47 12 56 8
               Z"/>
 
-            <ellipse class="cat" cx="58" cy="124" rx="23" ry="52"/>
-            <ellipse class="cat-light" cx="60" cy="136" rx="11.5" ry="34"/>
-            <path class="cat" d="M38 108C27 113 23 124 29 132C40 130 47 120 48 109Z"/>
-            <ellipse class="cat-light" cx="31" cy="129" rx="5.0" ry="4.0" transform="rotate(-18 31 129)"/>
-            <path class="cat" d="M77 112C89 121 88 136 78 144C68 137 68 122 77 112Z"/>
-            <ellipse class="cat-light" cx="78" cy="143" rx="5.0" ry="4.0" transform="rotate(22 78 143)"/>
-            <path class="cat-dark" d="M42 170C34 179 36 190 46 192C55 187 56 176 48 168Z"/>
-            <path class="cat-dark" d="M68 170C78 177 79 188 70 193C59 190 58 178 64 168Z"/>
-            <path class="cat" d="M81 150C88 157 90 166 85 174" fill="none" stroke="#7f98a7" stroke-width="2.6"/>
+            <ellipse class="mouse" cx="70" cy="32" rx="11" ry="16" transform="rotate(25 70 32)"/>
+            <ellipse class="mouse-light" cx="70" cy="35" rx="5.5" ry="9" transform="rotate(25 70 35)"/>
+            <circle class="mouse" cx="58" cy="23" r="10.8"/>
+            <circle class="mouse-ear" cx="50" cy="15" r="5.8"/>
+            <circle class="mouse-ear" cx="66" cy="15" r="5.4"/>
+            <ellipse class="mouse-light" cx="57" cy="27" rx="6.4" ry="5.4"/>
+            <ellipse cx="54" cy="21.5" rx="1.2" ry="1.9" fill="#111"/>
+            <ellipse cx="61" cy="21.5" rx="1.2" ry="1.9" fill="#111"/>
+            <path d="M55.8 28C57.5 27 59.7 27.1 61 28.2C59.8 30.2 57.1 30.1 55.8 28Z" fill="#311913"/>
+            <path class="line" d="M57.5 30.2C54 34 49.5 32.5 47.5 29"/>
+            <path class="mouse" d="M66 20C72 14 79 14 82 19C80 25 72 27 66 23Z"/>
+            <path class="mouse" d="M78 37C86 41 91 39 94 33C88 29 81 31 77 35Z"/>
+            <path class="mouse" d="M66 46C63 55 69 61 76 59C78 52 74 47 68 44Z"/>
+            <path class="mouse" d="M54 40C46 45 45 53 51 57C58 54 60 47 57 41Z"/>
+            <path d="M73 44C63 50 58 62 61 75" fill="none" stroke="#a35f2f" stroke-width="2.1" stroke-linecap="round"/>
+            <path class="thin" d="M52 27L44 25M52 29L44 30M62 27L70 25M62 29L70 30"/>
 
-            <path class="cat" d="M42 65C33 55 32 41 39 29L55 50Z"/>
-            <path class="cat-ear" d="M41 48C40 41 41 36 44 32L51 51Z"/>
-            <path class="cat" d="M76 66C84 55 86 42 81 30L66 51Z"/>
-            <path class="cat-ear" d="M76 49C79 42 79 37 78 33L70 52Z"/>
-            <ellipse class="cat" cx="59" cy="71" rx="27" ry="24"/>
-            <ellipse class="cat-light" cx="51" cy="82" rx="8.6" ry="9.4"/>
-            <ellipse class="cat-light" cx="67" cy="82" rx="8.6" ry="9.4"/>
-            <ellipse class="cat-eye" cx="53" cy="69" rx="5.0" ry="6.8"/>
-            <ellipse class="cat-eye" cx="67" cy="69" rx="5.0" ry="6.8"/>
-            <ellipse cx="54.9" cy="69.7" rx="1.5" ry="2.8" fill="#111"/>
-            <ellipse cx="68.8" cy="69.7" rx="1.5" ry="2.8" fill="#111"/>
-            <ellipse cx="60" cy="81.2" rx="3.0" ry="2.1" fill="#111" stroke="#111" stroke-width="0.2"/>
-            <path class="line" d="M60 83.4V86.8"/>
-            <path class="line" d="M60 86.8C55 92 47 91 44 87"/>
-            <path class="line" d="M60 86.8C65 92 74 90 77 86"/>
-            <path class="line" d="M47 62C51 59 56 59 59 62M63 62C67 59 73 60 76 63"/>
-            <path class="thin" d="M52 81L39 78M52 84L38 84M52 87L40 91"/>
-            <path class="thin" d="M68 81L82 78M68 84L83 84M68 87L82 91"/>
+            <path class="cat" d="M34 120C27 138 32 166 45 182C56 194 72 188 78 170C84 149 75 122 59 111C49 104 39 108 34 120Z"/>
+            <ellipse class="cat-light" cx="61" cy="151" rx="10" ry="28" transform="rotate(-12 61 151)"/>
+            <path class="cat" d="M46 112C42 91 47 72 57 53C63 55 67 61 66 69C60 84 55 99 56 115Z"/>
+            <path class="glove" d="M54 50C49 43 52 36 59 37C59 30 67 30 68 37C73 34 78 40 74 46C80 49 77 57 69 56C64 56 58 54 54 50Z"/>
+            <path class="cat" d="M69 118C75 98 84 82 96 68C102 71 105 78 102 85C90 97 81 111 78 128Z"/>
+            <path class="glove" d="M96 66C95 58 101 54 106 58C110 51 118 55 116 62C123 62 126 70 120 74C124 80 117 85 110 81C104 77 99 72 96 66Z"/>
+            <path class="cat-dark" d="M35 168C27 177 29 187 39 190C48 185 49 174 42 166Z"/>
+            <path class="cat-dark" d="M65 169C75 175 77 186 69 191C58 188 57 177 62 167Z"/>
+            <path class="cat" d="M30 155C19 159 15 170 20 179" fill="none" stroke="#587188" stroke-width="2.4"/>
 
-            <ellipse class="mouse" cx="82" cy="170" rx="12" ry="16" transform="rotate(-24 82 170)"/>
-            <ellipse class="mouse-light" cx="83" cy="173" rx="5.8" ry="9.0" transform="rotate(-24 83 173)"/>
-            <circle class="mouse" cx="78" cy="150" r="10.8"/>
-            <circle class="mouse-ear" cx="70" cy="143" r="5.8"/>
-            <circle class="mouse-ear" cx="87" cy="143" r="5.4"/>
-            <ellipse class="mouse-light" cx="78" cy="154" rx="6.6" ry="5.4"/>
-            <ellipse cx="75" cy="149" rx="1.2" ry="1.9" fill="#111"/>
-            <ellipse cx="81.8" cy="149" rx="1.2" ry="1.9" fill="#111"/>
-            <path d="M76.4 156C78.2 155 80.4 155.1 81.8 156.2C80.6 158.2 77.7 158.1 76.4 156Z" fill="#311913"/>
-            <path class="line" d="M78 158.3C75 161 70.8 160.8 68.5 158.4"/>
-            <path class="mouse" d="M75 171C66 170 61 174 60 180C67 182 74 178 78 173Z"/>
-            <path class="mouse" d="M88 174C96 177 102 175 104 169C98 166 91 168 87 172Z"/>
-            <path class="mouse" d="M80 184C78 191 82 196 88 196C92 191 90 186 85 182Z"/>
-            <path d="M93 168C105 164 109 155 103 149" fill="none" stroke="#a86434" stroke-width="2.2" stroke-linecap="round"/>
-            <path class="thin" d="M73 156L65 154M73 158L65 159M82 156L90 154M82 158L90 159"/>
+            <path class="cat" d="M31 104C20 96 15 82 19 68L41 84Z"/>
+            <path class="cat-ear" d="M27 84C24 78 24 73 26 69L36 86Z"/>
+            <path class="cat" d="M64 94C70 80 72 66 66 55L54 80Z"/>
+            <path class="cat-ear" d="M62 75C64 68 64 63 62 59L56 79Z"/>
+            <ellipse class="cat" cx="42" cy="99" rx="27" ry="25" transform="rotate(18 42 99)"/>
+            <ellipse class="cat-light" cx="37" cy="108" rx="8.8" ry="9.6" transform="rotate(18 37 108)"/>
+            <ellipse class="cat-light" cx="52" cy="112" rx="8.8" ry="9.6" transform="rotate(18 52 112)"/>
+            <ellipse class="cat-eye" cx="39" cy="96" rx="5" ry="6.8" transform="rotate(18 39 96)"/>
+            <ellipse class="cat-eye" cx="52" cy="100" rx="5" ry="6.8" transform="rotate(18 52 100)"/>
+            <ellipse cx="41" cy="97" rx="1.5" ry="2.8" fill="#111"/>
+            <ellipse cx="54" cy="101" rx="1.5" ry="2.8" fill="#111"/>
+            <ellipse cx="44" cy="110" rx="3" ry="2.1" fill="#111" stroke="#111" stroke-width="0.2"/>
+            <path class="line" d="M44 112V116"/>
+            <path class="line" d="M44 116C39 120 32 118 30 113"/>
+            <path class="line" d="M44 116C49 123 58 122 62 117"/>
+            <path class="line" d="M29 91C34 87 40 88 43 93M47 93C53 91 58 94 60 99"/>
+            <path class="thin" d="M36 109L23 103M36 112L22 111M36 115L24 120"/>
+            <path class="thin" d="M53 114L67 112M53 117L68 119M52 120L65 126"/>
 
-            <path class="motion" d="M28 96C23 91 22 85 25 80"/>
-            <path class="motion" d="M86 132C92 136 94 142 92 148"/>
-            <path class="motion" d="M94 165C99 162 102 157 103 151"/>
-            <path class="optional" d="M45 103C52 108 64 108 72 102"/>
-            <path class="optional" d="M70 164C75 167 83 166 88 161"/>
+            <path class="motion" d="M36 54C31 47 30 40 34 34"/>
+            <path class="motion" d="M84 70C92 62 95 53 92 44"/>
+            <path class="motion" d="M23 142C16 135 15 127 19 120"/>
+            <path class="motion" d="M48 176C54 184 63 187 73 184"/>
+            <path class="optional" d="M32 131C43 138 58 137 68 128"/>
+            <path class="optional" d="M48 38C55 42 66 41 73 34"/>
 
-            <use href="#registration-mark" x="39" y="29"/>
-            <use href="#registration-mark" x="88" y="195"/>
+            <use href="#registration-mark" x="54" y="10"/>
+            <use href="#registration-mark" x="31" y="187"/>
           </g>
         </defs>
 
         <rect class="page" x="0" y="0" width="210" height="297"/>
-        <text class="headline" x="105" y="15" text-anchor="middle">Vertical double-sided paper craft: cat above, mouse below</text>
-        <text class="tiny" x="105" y="22" text-anchor="middle">Cut the outside contour after folding and gluing. Red dashed marks are optional.</text>
+        <text class="headline" x="105" y="15" text-anchor="middle">Vertical double-sided paper craft: cat reaches up, mouse dodges</text>
+        <text class="tiny" x="105" y="22" text-anchor="middle">Left is front. Right is mirrored. Cut only the outer cream contour after folding and gluing.</text>
 
         <line class="fold" x1="105" y1="31" x2="105" y2="268"/>
         <rect class="glue" x="101.7" y="35" width="6.6" height="226" rx="1.2"/>
         <text class="label" x="105" y="276" text-anchor="middle">Fold line and glue strip</text>
 
-        <text class="label" x="54" y="37" text-anchor="middle">Front</text>
-        <text class="label" x="156" y="37" text-anchor="middle">Back mirror</text>
-        <use href="#vertical-chase" transform="translate(8 45) scale(0.82)"/>
-        <use href="#vertical-chase" transform="translate(210 0) scale(-1 1) translate(8 45) scale(0.82)"/>
+        <rect class="panel" x="8" y="30" width="89" height="222"/>
+        <rect class="panel" x="113" y="30" width="89" height="222"/>
+        <text class="label" x="52.5" y="37" text-anchor="middle">Front</text>
+        <text class="label" x="157.5" y="37" text-anchor="middle">Back mirror</text>
+        <use href="#reaching-scene" transform="translate(13 39) scale(1.08)"/>
+        <use href="#reaching-scene" transform="translate(210 0) scale(-1 1) translate(13 39) scale(1.08)"/>
 
         <g transform="translate(18 258)">
-          <line x1="0" y1="0" x2="13" y2="0" stroke="#111" stroke-width="1.2"/>
+          <line x1="0" y1="0" x2="13" y2="0" stroke="#111" stroke-width="1.1"/>
           <text class="tiny" x="16" y="0.9">Thick black contour: final cut</text>
-          <line x1="0" y1="8" x2="13" y2="8" stroke="#c9352c" stroke-width="0.42" stroke-dasharray="1.6 1.1"/>
+          <line x1="0" y1="8" x2="13" y2="8" stroke="#d22" stroke-width="0.38" stroke-dasharray="1.5 1.1"/>
           <text class="tiny" x="16" y="8.9">Red dashed: optional small cuts</text>
           <line x1="0" y1="16" x2="13" y2="16" stroke="#2368c9" stroke-width="0.5" stroke-dasharray="3 2"/>
-          <text class="tiny" x="16" y="16.9">Blue dashed: score and fold</text>
-        </g>
-
-        <g transform="translate(122 256)">
-          <text class="tiny" x="0" y="0">Vertical layout:</text>
-          <text class="tiny" x="0" y="6">1. Cat uses height, not width.</text>
-          <text class="tiny" x="0" y="12">2. Mouse stays by the feet.</text>
-          <text class="tiny" x="0" y="18">3. Cut one continuous edge.</text>
+          <text class="tiny" x="16" y="16.9">Blue dashed: fold</text>
         </g>
       </svg>
     </section>
