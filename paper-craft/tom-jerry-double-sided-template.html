@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>双面 Tom & Jerry 剪纸模板</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f0f0f0;
+      color: #222;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+    }
+
+    .toolbar {
+      max-width: 900px;
+      margin: 18px auto 12px;
+      padding: 14px 18px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .toolbar h1 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .toolbar p {
+      margin: 4px 0;
+      line-height: 1.5;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 14px;
+      border: 0;
+      border-radius: 6px;
+      background: #1f6feb;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto 24px;
+      background: #fff;
+      box-shadow: 0 3px 16px rgba(0, 0, 0, 0.18);
+    }
+
+    .sheet img {
+      display: block;
+      width: 210mm;
+      height: 297mm;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .sheet {
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="toolbar" aria-label="打印说明">
+      <h1>双面 Tom & Jerry 剪纸模板</h1>
+      <p>如果 SVG 文件双击打不开，请直接打开这个 HTML 文件；浏览器会显示同目录下的 SVG 模板。</p>
+      <p>打印时请选择 A4、100% 比例或“实际大小”，不要选择“适合页面”。</p>
+      <button type="button" onclick="window.print()">打印模板</button>
+    </section>
+
+    <section class="sheet" aria-label="A4 剪纸模板">
+      <img src="tom-jerry-double-sided-template.svg" alt="双面 Tom and Jerry 剪纸模板">
+    </section>
+  </main>
+</body>
+</html>
