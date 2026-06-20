@@ -7,104 +7,58 @@
   <style>
     @page { size: A4; margin: 0; }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: #f0f0f0;
-      color: #222;
-      font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
-    }
-    .toolbar {
-      max-width: 980px;
-      margin: 18px auto 12px;
-      padding: 16px 20px;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    }
+    body { margin: 0; background: #f0f0f0; color: #222; font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif; }
+    .toolbar { max-width: 980px; margin: 18px auto 12px; padding: 16px 20px; background: #fff; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
     .toolbar h1 { margin: 0 0 10px; font-size: 21px; }
     .toolbar p { margin: 6px 0; line-height: 1.55; }
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 8px;
-      margin: 12px 0 0;
-      padding: 0;
-      list-style: none;
-    }
-    .steps li {
-      padding: 8px 10px;
-      border: 1px solid #e1e1e1;
-      border-radius: 8px;
-      background: #fafafa;
-      line-height: 1.45;
-    }
-    button {
-      margin-top: 12px;
-      padding: 8px 14px;
-      border: 0;
-      border-radius: 6px;
-      background: #1f6feb;
-      color: #fff;
-      cursor: pointer;
-      font-size: 14px;
-    }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; }
+    .steps li { padding: 8px 10px; border: 1px solid #e1e1e1; border-radius: 8px; background: #fafafa; line-height: 1.45; }
+    button { margin-top: 12px; padding: 8px 14px; border: 0; border-radius: 6px; background: #1f6feb; color: #fff; cursor: pointer; font-size: 14px; }
     .note { color: #666; font-size: 13px; }
-    .sheet {
-      width: 210mm;
-      min-height: 297mm;
-      margin: 0 auto 24px;
-      background: #fff;
-      box-shadow: 0 3px 16px rgba(0, 0, 0, 0.18);
-    }
+    .sheet { width: 210mm; min-height: 297mm; margin: 0 auto 24px; background: #fff; box-shadow: 0 3px 16px rgba(0,0,0,.18); }
     .sheet svg { display: block; width: 210mm; height: 297mm; }
-    @media print {
-      body { background: #fff; }
-      .toolbar { display: none; }
-      .sheet { margin: 0; box-shadow: none; }
-    }
+    @media print { body { background: #fff; } .toolbar { display: none; } .sheet { margin: 0; box-shadow: none; } }
   </style>
 </head>
 <body>
   <main>
     <section class="toolbar" aria-label="中文打印说明">
       <h1>双面猫鼠追逐剪纸模板</h1>
-      <p>这版按“能剪出来”的目标重做：角色细节主要靠彩色印刷保留，真正必须剪的只有米黄色底板最外侧粗黑线。</p>
-      <p>模板是双面的：左边是正面，右边是镜像背面。对折、涂胶、对齐定位点后，再沿外轮廓剪下，成品两面都会有图案。</p>
-      <p>想简单成功：不要刻红色虚线，只剪外轮廓。想要更有剪纸感：先刻少量红色虚线，再折叠粘贴。</p>
+      <p>你指出得对：上一版剪不出效果图那种追逐感。这一版把外轮廓收紧到角色周围，Tom 是向右扑的动作，Jerry 在前面回头跑。</p>
+      <p>剪法仍然简单：正反两面打印在同一张纸上，对折、涂胶、对齐定位点，然后只沿米黄色支撑底板最外侧粗黑线剪下。</p>
       <ul class="steps">
-        <li><strong>打印：</strong>选择 A4、100% 或“实际大小”，不要选择“适合页面”。</li>
-        <li><strong>可选刻线：</strong>红色虚线是高手版小细节，新手可以全部跳过。</li>
-        <li><strong>对折：</strong>沿蓝色虚线压痕，对折后让印刷面朝外。</li>
-        <li><strong>涂胶：</strong>灰色中线区域薄涂胶，对齐两个圆形定位标记后压平。</li>
-        <li><strong>最后剪：</strong>只沿米黄色底板最外侧粗黑线剪，耳朵、尾巴、手脚附近慢一点。</li>
+        <li><strong>打印：</strong>选择 A4、100% 或“实际大小”。</li>
+        <li><strong>可选刻线：</strong>红色虚线可跳过；不刻也能成型。</li>
+        <li><strong>对折：</strong>沿蓝色虚线压痕，让印刷面朝外。</li>
+        <li><strong>涂胶：</strong>灰色中线区域薄涂胶，对齐圆形定位标记。</li>
+        <li><strong>最后剪：</strong>只剪最外侧粗黑线，尾巴和耳朵附近慢剪。</li>
       </ul>
       <button type="button" onclick="window.print()">打印模板</button>
-      <p class="note">Tom and Jerry 是 MGM / 华纳体系经典动画角色；这里使用的是灰猫追棕色小老鼠的可爱剪纸风设计。</p>
+      <p class="note">这是可剪纸艺模板，不是复杂镂空版；角色细节靠彩色打印保留，外形靠一整块连续轮廓保证强度。</p>
     </section>
 
     <section class="sheet" aria-label="A4 双面剪纸模板">
       <svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" role="img" aria-labelledby="svg-title svg-desc">
-        <title id="svg-title">Cuttable double-sided gray cat chasing brown mouse paper craft</title>
-        <desc id="svg-desc">A4 printable double-sided paper craft template with mirrored front and back panels. Cut only the outside cream backing contour for the easiest version.</desc>
+        <title id="svg-title">Double-sided cuttable chase paper craft</title>
+        <desc id="svg-desc">A4 printable double-sided paper craft template. A gray cat lunges toward a brown mouse running ahead. Cut the tight cream outside contour after folding and gluing.</desc>
         <defs>
           <style>
             .page { fill: #fff; }
             .headline { font: 700 5px Arial, sans-serif; fill: #111; }
             .label { font: 3px Arial, sans-serif; fill: #111; }
             .tiny { font: 2.35px Arial, sans-serif; fill: #333; }
-            .backing { fill: #fff0c2; stroke: #111; stroke-width: 1.25; stroke-linejoin: round; stroke-linecap: round; }
-            .tom { fill: #7f98a7; stroke: #111; stroke-width: 0.32; stroke-linejoin: round; stroke-linecap: round; }
-            .tom-dark { fill: #688290; stroke: #111; stroke-width: 0.25; stroke-linejoin: round; stroke-linecap: round; }
-            .tom-white { fill: #fff7ec; stroke: #111; stroke-width: 0.22; stroke-linejoin: round; stroke-linecap: round; }
-            .tom-ear { fill: #efa0ad; stroke: #111; stroke-width: 0.2; stroke-linejoin: round; }
-            .tom-eye { fill: #ffe36b; stroke: #111; stroke-width: 0.2; }
+            .backing { fill: #fff0c2; stroke: #111; stroke-width: 1.2; stroke-linejoin: round; stroke-linecap: round; }
+            .cat { fill: #7f98a7; stroke: #111; stroke-width: 0.32; stroke-linejoin: round; stroke-linecap: round; }
+            .cat-dark { fill: #6c8796; stroke: #111; stroke-width: 0.25; stroke-linejoin: round; stroke-linecap: round; }
+            .cat-light { fill: #fff7ec; stroke: #111; stroke-width: 0.22; stroke-linejoin: round; stroke-linecap: round; }
+            .cat-ear { fill: #ee9cac; stroke: #111; stroke-width: 0.2; stroke-linejoin: round; }
+            .cat-eye { fill: #ffe36b; stroke: #111; stroke-width: 0.2; }
             .mouse { fill: #a86434; stroke: #111; stroke-width: 0.28; stroke-linejoin: round; stroke-linecap: round; }
             .mouse-light { fill: #f3c184; stroke: #111; stroke-width: 0.2; stroke-linejoin: round; stroke-linecap: round; }
             .mouse-ear { fill: #efb187; stroke: #111; stroke-width: 0.2; }
             .line { fill: none; stroke: #111; stroke-width: 0.22; stroke-linecap: round; stroke-linejoin: round; }
             .thin { fill: none; stroke: #111; stroke-width: 0.16; stroke-linecap: round; }
-            .motion { fill: none; stroke: #577da4; stroke-width: 0.35; stroke-linecap: round; stroke-dasharray: 1.2 0.9; }
+            .motion { fill: none; stroke: #5a7fa6; stroke-width: 0.35; stroke-linecap: round; stroke-dasharray: 1.2 0.9; }
             .optional { fill: none; stroke: #c9352c; stroke-width: 0.42; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1.6 1.1; }
             .fold { fill: none; stroke: #2368c9; stroke-width: 0.5; stroke-dasharray: 3 2; }
             .glue { fill: #d9d9d9; stroke: #777; stroke-width: 0.25; stroke-dasharray: 1.3 1.1; opacity: 0.78; }
@@ -116,89 +70,90 @@
             <path class="mark" d="M-3 0H3M0 -3V3"/>
           </g>
 
-          <g id="cuttable-chase">
+          <g id="chase-cutout">
             <path class="backing" d="
-              M20 54
-              C27 34 56 31 70 49
-              C83 45 96 55 98 69
-              C100 82 94 93 82 99
-              C88 108 90 122 86 135
-              C94 136 103 140 109 146
-              C113 134 130 134 136 146
-              C142 158 134 172 121 173
-              C115 184 99 187 88 178
-              C78 192 58 198 40 192
-              C25 187 16 176 14 161
-              C4 154 5 139 15 133
-              C11 118 14 102 25 91
-              L20 66
-              L32 74
-              C28 66 24 59 20 54
+              M19 55
+              C26 36 51 30 66 44
+              L75 35
+              C82 50 81 64 73 78
+              C84 83 91 92 93 104
+              C101 101 111 102 119 106
+              C122 95 137 92 145 101
+              C155 96 166 104 164 116
+              C176 123 174 140 160 144
+              C160 155 148 164 136 159
+              C128 169 112 166 107 154
+              C100 155 93 153 88 149
+              C83 165 68 181 49 183
+              C31 185 18 173 19 156
+              C8 152 7 138 17 132
+              C13 119 15 106 24 96
+              C19 87 18 76 23 67
               Z"/>
 
-            <ellipse class="tom" cx="50" cy="140" rx="24" ry="41" transform="rotate(-8 50 140)"/>
-            <ellipse class="tom-white" cx="54" cy="149" rx="12" ry="25" transform="rotate(-8 54 149)"/>
-            <path class="tom" d="M29 121C20 119 14 123 13 129C18 135 31 134 41 126Z"/>
-            <path class="tom-white" d="M18 127C21 123 27 123 33 125C29 130 22 130 18 127Z"/>
-            <path class="tom" d="M68 122C82 114 94 116 98 125C92 133 77 134 64 127Z"/>
-            <path class="tom-white" d="M84 122C91 120 96 122 98 125C94 129 87 130 81 126Z"/>
-            <path class="tom" d="M32 165C26 171 27 179 33 181C40 182 44 176 39 168Z"/>
-            <path class="tom" d="M63 164C71 173 80 175 84 168C87 162 78 157 67 158Z"/>
-            <path class="tom-dark" d="M25 137C15 138 10 150 19 157C27 163 37 158 38 149C35 142 31 138 25 137Z"/>
-            <path class="tom" d="M65 145C74 137 85 137 91 142C89 150 78 155 67 151Z"/>
-            <ellipse class="tom-white" cx="89" cy="142" rx="5.0" ry="4.1" transform="rotate(12 89 142)"/>
-            <path class="tom" d="M31 79C22 68 19 53 24 40L43 61Z"/>
-            <path class="tom-ear" d="M28 58C27 52 27 48 30 44L38 61Z"/>
-            <path class="tom" d="M67 79C74 68 76 53 73 41L57 61Z"/>
-            <path class="tom-ear" d="M66 58C69 53 70 48 69 44L61 62Z"/>
-            <ellipse class="tom" cx="49" cy="85" rx="27" ry="24"/>
-            <ellipse class="tom-white" cx="40.5" cy="95" rx="8.8" ry="9.6"/>
-            <ellipse class="tom-white" cx="56.2" cy="95" rx="8.8" ry="9.6"/>
-            <ellipse class="tom-eye" cx="42" cy="83" rx="5.0" ry="6.8"/>
-            <ellipse class="tom-eye" cx="56" cy="83" rx="5.0" ry="6.8"/>
-            <ellipse cx="44.2" cy="84" rx="1.5" ry="2.8" fill="#111"/>
-            <ellipse cx="58.0" cy="84" rx="1.5" ry="2.8" fill="#111"/>
-            <path class="line" d="M36 76C40 73 45 73 48 76M51 76C55 73 61 74 64 77"/>
-            <ellipse cx="49" cy="94.2" rx="3.0" ry="2.1" fill="#111" stroke="#111" stroke-width="0.2"/>
-            <path class="line" d="M49 96.2V99.5"/>
-            <path class="line" d="M49 99.5C45 105 37 104 34 100"/>
-            <path class="line" d="M49 99.5C54 105 63 103 66 99"/>
-            <path class="thin" d="M41 94L28 91M41 97L27 97M41 100L29 104"/>
-            <path class="thin" d="M57 94L70 91M57 97L72 97M57 100L70 104"/>
+            <path class="cat-dark" d="M25 132C15 132 10 144 18 151C26 158 36 153 37 143C34 136 30 132 25 132Z"/>
+            <path class="cat" d="M39 127C31 142 32 164 44 174C55 184 70 176 76 158C82 139 76 116 63 107C52 99 43 114 39 127Z"/>
+            <ellipse class="cat-light" cx="55" cy="143" rx="12" ry="24" transform="rotate(-14 55 143)"/>
+            <path class="cat" d="M67 119C79 107 94 104 103 112C99 124 83 131 67 127Z"/>
+            <ellipse class="cat-light" cx="101" cy="112" rx="5.0" ry="4.2" transform="rotate(18 101 112)"/>
+            <path class="cat" d="M36 121C26 116 16 119 13 126C18 133 31 134 43 126Z"/>
+            <path class="cat-light" d="M18 125C22 121 29 121 35 124C30 130 22 130 18 125Z"/>
+            <path class="cat" d="M34 161C27 168 29 177 36 177C43 177 46 169 40 163Z"/>
+            <path class="cat" d="M66 160C75 168 84 168 88 160C84 154 73 153 65 157Z"/>
+            <path class="cat" d="M29 154C20 158 16 166 18 174" fill="none" stroke="#7f98a7" stroke-width="2.5"/>
 
-            <ellipse class="mouse" cx="110" cy="157" rx="13" ry="18" transform="rotate(-16 110 157)"/>
-            <ellipse class="mouse-light" cx="111" cy="160" rx="6.5" ry="10.4" transform="rotate(-16 111 160)"/>
-            <circle class="mouse" cx="109" cy="133" r="12.2"/>
-            <circle class="mouse-ear" cx="100" cy="125" r="6.4"/>
-            <circle class="mouse-ear" cx="119" cy="125" r="6.1"/>
-            <ellipse class="mouse-light" cx="109" cy="137" rx="7.5" ry="6.2"/>
-            <ellipse cx="105.2" cy="131.5" rx="1.3" ry="2.1" fill="#111"/>
-            <ellipse cx="113.0" cy="131.4" rx="1.3" ry="2.1" fill="#111"/>
-            <path d="M107.5 139.2C109.5 138.1 112.0 138.2 113.5 139.5C112.2 141.8 109.0 141.6 107.5 139.2Z" fill="#311913"/>
-            <path class="line" d="M110 142C107 146 101 146 98 143"/>
-            <path class="mouse" d="M101 158C93 156 87 160 86 167C93 169 100 166 104 160Z"/>
-            <path class="mouse" d="M116 162C123 165 128 163 130 157C125 154 119 156 115 160Z"/>
-            <path class="mouse" d="M104 169C101 176 104 182 110 183C114 178 113 172 108 168Z"/>
-            <path class="mouse" d="M119 170C125 175 132 174 135 169C132 164 124 164 118 167Z"/>
-            <path d="M121 157C132 153 137 144 131 137" fill="none" stroke="#a86434" stroke-width="2.3" stroke-linecap="round"/>
-            <path class="line" d="M103 126C107 124 113 124 117 126"/>
-            <path class="thin" d="M104 139L95 137M104 141L95 142M114 139L123 137M114 141L123 142"/>
+            <path class="cat" d="M31 77C22 67 20 52 26 40L43 60Z"/>
+            <path class="cat-ear" d="M29 58C28 52 29 48 31 44L38 61Z"/>
+            <path class="cat" d="M66 77C73 66 75 52 72 41L56 60Z"/>
+            <path class="cat-ear" d="M65 58C68 52 69 48 68 44L61 61Z"/>
+            <ellipse class="cat" cx="49" cy="83" rx="27" ry="24"/>
+            <ellipse class="cat-light" cx="41" cy="94" rx="8.8" ry="9.6"/>
+            <ellipse class="cat-light" cx="57" cy="94" rx="8.8" ry="9.6"/>
+            <ellipse class="cat-eye" cx="43" cy="82" rx="5.0" ry="6.8"/>
+            <ellipse class="cat-eye" cx="57" cy="82" rx="5.0" ry="6.8"/>
+            <ellipse cx="45.5" cy="82.8" rx="1.5" ry="2.8" fill="#111"/>
+            <ellipse cx="59.4" cy="82.8" rx="1.5" ry="2.8" fill="#111"/>
+            <ellipse cx="50" cy="93.2" rx="3.0" ry="2.1" fill="#111" stroke="#111" stroke-width="0.2"/>
+            <path class="line" d="M50 95.4V98.8"/>
+            <path class="line" d="M50 98.8C45 104 37 103 34 99"/>
+            <path class="line" d="M50 98.8C55 104 64 102 67 98"/>
+            <path class="line" d="M36 75C40 72 45 72 48 75M52 75C56 72 62 73 65 76"/>
+            <path class="thin" d="M41 93L28 90M41 96L27 96M41 99L29 103"/>
+            <path class="thin" d="M58 93L72 90M58 96L73 96M58 99L72 103"/>
 
-            <path class="motion" d="M18 112C13 107 12 101 15 96"/>
-            <path class="motion" d="M78 112C88 107 98 108 106 112"/>
-            <path class="motion" d="M84 169C77 171 70 170 64 166"/>
-            <path class="motion" d="M124 149C129 146 132 142 133 137"/>
-            <path class="optional" d="M35 113C42 118 54 118 63 112"/>
-            <path class="optional" d="M102 148C107 151 115 150 119 145"/>
+            <ellipse class="mouse" cx="126" cy="137" rx="13" ry="18" transform="rotate(-20 126 137)"/>
+            <ellipse class="mouse-light" cx="127" cy="140" rx="6.5" ry="10.2" transform="rotate(-20 127 140)"/>
+            <circle class="mouse" cx="119" cy="113" r="12.2"/>
+            <circle class="mouse-ear" cx="110" cy="105" r="6.5"/>
+            <circle class="mouse-ear" cx="129" cy="105" r="6.1"/>
+            <ellipse class="mouse-light" cx="118" cy="117" rx="7.5" ry="6.1"/>
+            <ellipse cx="114.3" cy="111.5" rx="1.35" ry="2.1" fill="#111"/>
+            <ellipse cx="121.8" cy="111.5" rx="1.35" ry="2.1" fill="#111"/>
+            <path d="M115.7 119C117.6 117.9 120.1 118.0 121.6 119.3C120.2 121.6 117.2 121.4 115.7 119Z" fill="#311913"/>
+            <path class="line" d="M118 121.6C115 125 110 125 107 122.4"/>
+            <path class="mouse" d="M118 139C108 137 101 141 100 148C108 151 116 147 121 141Z"/>
+            <path class="mouse" d="M132 141C140 144 147 141 149 134C142 132 135 134 131 139Z"/>
+            <path class="mouse" d="M120 151C116 159 119 166 126 167C131 162 129 155 124 150Z"/>
+            <path class="mouse" d="M135 151C142 157 150 155 153 149C149 144 140 145 134 149Z"/>
+            <path d="M138 137C153 132 158 121 151 113" fill="none" stroke="#a86434" stroke-width="2.3" stroke-linecap="round"/>
+            <path class="line" d="M112 106C116 103 123 103 127 106"/>
+            <path class="thin" d="M113 119L104 117M113 121L104 122M123 119L132 117M123 121L132 122"/>
+
+            <path class="motion" d="M21 111C15 106 14 100 17 95"/>
+            <path class="motion" d="M80 100C91 95 101 96 110 101"/>
+            <path class="motion" d="M86 151C78 154 70 153 64 149"/>
+            <path class="motion" d="M140 129C146 125 149 120 151 114"/>
+            <path class="optional" d="M35 111C44 116 56 116 65 110"/>
+            <path class="optional" d="M112 129C118 133 127 131 132 126"/>
 
             <use href="#registration-mark" x="24" y="44"/>
-            <use href="#registration-mark" x="121" y="183"/>
+            <use href="#registration-mark" x="151" y="149"/>
           </g>
         </defs>
 
         <rect class="page" x="0" y="0" width="210" height="297"/>
-        <text class="headline" x="105" y="15" text-anchor="middle">Cuttable double-sided paper craft: gray cat chasing brown mouse</text>
-        <text class="tiny" x="105" y="22" text-anchor="middle">Easiest version: cut only the thick black outside contour of the cream backing after folding and gluing.</text>
+        <text class="headline" x="105" y="15" text-anchor="middle">Cuttable double-sided paper craft: cat chasing mouse</text>
+        <text class="tiny" x="105" y="22" text-anchor="middle">Cut the tight cream outside contour after folding and gluing. Red dashed marks are optional.</text>
 
         <line class="fold" x1="105" y1="31" x2="105" y2="268"/>
         <rect class="glue" x="101.7" y="35" width="6.6" height="226" rx="1.2"/>
@@ -206,12 +161,12 @@
 
         <text class="label" x="54" y="37" text-anchor="middle">Front</text>
         <text class="label" x="156" y="37" text-anchor="middle">Back mirror</text>
-        <use href="#cuttable-chase" transform="translate(2 38) scale(0.75)"/>
-        <use href="#cuttable-chase" transform="translate(210 0) scale(-1 1) translate(2 38) scale(0.75)"/>
+        <use href="#chase-cutout" transform="translate(0 45) scale(0.64)"/>
+        <use href="#chase-cutout" transform="translate(210 0) scale(-1 1) translate(0 45) scale(0.64)"/>
 
         <g transform="translate(18 258)">
-          <line x1="0" y1="0" x2="13" y2="0" stroke="#111" stroke-width="1.25"/>
-          <text class="tiny" x="16" y="0.9">Thick black outer contour: final cut</text>
+          <line x1="0" y1="0" x2="13" y2="0" stroke="#111" stroke-width="1.2"/>
+          <text class="tiny" x="16" y="0.9">Thick black contour: final cut</text>
           <line x1="0" y1="8" x2="13" y2="8" stroke="#c9352c" stroke-width="0.42" stroke-dasharray="1.6 1.1"/>
           <text class="tiny" x="16" y="8.9">Red dashed: optional small cuts</text>
           <line x1="0" y1="16" x2="13" y2="16" stroke="#2368c9" stroke-width="0.5" stroke-dasharray="3 2"/>
@@ -221,8 +176,8 @@
         <g transform="translate(122 256)">
           <text class="tiny" x="0" y="0">Cuttable design:</text>
           <text class="tiny" x="0" y="6">1. Print colors first.</text>
-          <text class="tiny" x="0" y="12">2. Fold, glue, align round marks.</text>
-          <text class="tiny" x="0" y="18">3. Cut only the cream outside edge.</text>
+          <text class="tiny" x="0" y="12">2. Fold, glue, align marks.</text>
+          <text class="tiny" x="0" y="18">3. Cut only the outside edge.</text>
         </g>
       </svg>
     </section>
