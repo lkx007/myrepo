@@ -5,7 +5,9 @@
 - `tom-jerry-double-sided-template.html`
 - `tom-jerry-double-sided-template.svg`
 
-如果电脑不能直接打开 SVG，请双击 `tom-jerry-double-sided-template.html`，或在浏览器里打开它。HTML 会显示同目录下的 SVG 模板，并提供打印按钮。
+推荐下载并打开 `tom-jerry-double-sided-template.html`。这是单文件版，图案已经嵌入 HTML，单独下载、移动或改名后仍然可以显示和打印。
+
+`tom-jerry-double-sided-template.svg` 是备用矢量源文件，适合用浏览器、Inkscape、Illustrator 等软件打开。
 
 ## 使用方法
 
