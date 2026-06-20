@@ -3,24 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>双面 Tom and Jerry 彩色剪纸模板</title>
+  <title>双面 Tom and Jerry 追逐剪纸模板</title>
   <style>
-    @page {
-      size: A4;
-      margin: 0;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       background: #f0f0f0;
       color: #222;
       font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
     }
-
     .toolbar {
       max-width: 980px;
       margin: 18px auto 12px;
@@ -30,17 +22,8 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
-
-    .toolbar h1 {
-      margin: 0 0 10px;
-      font-size: 21px;
-    }
-
-    .toolbar p {
-      margin: 6px 0;
-      line-height: 1.55;
-    }
-
+    .toolbar h1 { margin: 0 0 10px; font-size: 21px; }
+    .toolbar p { margin: 6px 0; line-height: 1.55; }
     .steps {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -49,7 +32,6 @@
       padding: 0;
       list-style: none;
     }
-
     .steps li {
       padding: 8px 10px;
       border: 1px solid #e1e1e1;
@@ -57,7 +39,6 @@
       background: #fafafa;
       line-height: 1.45;
     }
-
     button {
       margin-top: 12px;
       padding: 8px 14px;
@@ -68,12 +49,7 @@
       cursor: pointer;
       font-size: 14px;
     }
-
-    .note {
-      color: #666;
-      font-size: 13px;
-    }
-
+    .note { color: #666; font-size: 13px; }
     .sheet {
       width: 210mm;
       min-height: 297mm;
@@ -81,41 +57,27 @@
       background: #fff;
       box-shadow: 0 3px 16px rgba(0, 0, 0, 0.18);
     }
-
-    .sheet svg {
-      display: block;
-      width: 210mm;
-      height: 297mm;
-    }
-
+    .sheet svg { display: block; width: 210mm; height: 297mm; }
     @media print {
-      body {
-        background: #fff;
-      }
-
-      .toolbar {
-        display: none;
-      }
-
-      .sheet {
-        margin: 0;
-        box-shadow: none;
-      }
+      body { background: #fff; }
+      .toolbar { display: none; }
+      .sheet { margin: 0; box-shadow: none; }
     }
   </style>
 </head>
 <body>
   <main>
     <section class="toolbar" aria-label="中文打印说明">
-      <h1>双面 Tom and Jerry 彩色剪纸模板</h1>
+      <h1>双面 Tom and Jerry 追逐剪纸模板</h1>
+      <p>这次重画成更明确的可爱追逐动作：Tom 在后面伸手追，Jerry 在前面回头跑，Tom 的鼻子也改成了居中对称的黑鼻头。</p>
       <p>这是单文件 HTML 版，图案已经嵌入页面，下载后即使改名也可以直接用浏览器打开。</p>
-      <p>Tom and Jerry 不是迪士尼出品，而是 MGM / 华纳体系的经典动画角色；这版按经典动画感做成灰蓝色猫和棕色小老鼠的追逐造型。</p>
+      <p>Tom and Jerry 是 MGM / 华纳体系的经典动画角色；模板采用经典灰猫、棕色小老鼠、夸张表情和跑动线来表现动画感。</p>
       <ul class="steps">
         <li><strong>打印：</strong>选择 A4、100% 或“实际大小”，不要选择“适合页面”。</li>
-        <li><strong>先刻：</strong>红色虚线是可选镂空细节，想要剪纸感更强时先用刻刀处理。</li>
+        <li><strong>先刻：</strong>红色虚线是可选镂空细节，不想太难可以不刻。</li>
         <li><strong>对折：</strong>沿蓝色虚线压痕，对折后让印刷面朝外。</li>
         <li><strong>涂胶：</strong>灰色中线区域薄涂胶水，对齐两个圆形定位标记后压平。</li>
-        <li><strong>最后剪：</strong>沿米黄色底板最外侧黑线剪下，耳朵、尾巴和老鼠手脚慢剪。</li>
+        <li><strong>最后剪：</strong>沿米黄色底板最外侧黑线剪下，耳朵、尾巴、手脚慢剪。</li>
       </ul>
       <button type="button" onclick="window.print()">打印模板</button>
       <p class="note">如果直接打开 SVG 仍有兼容问题，请优先使用这个 HTML 文件。</p>
@@ -123,30 +85,30 @@
 
     <section class="sheet" aria-label="A4 彩色剪纸模板">
       <svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" role="img" aria-labelledby="svg-title svg-desc">
-        <title id="svg-title">Color double-sided paper-cut template inspired by a classic gray cat and brown mouse chase</title>
-        <desc id="svg-desc">A4 printable color paper-cut template with mirrored front and back panels, cut line, fold line, glue area, and optional detail lines.</desc>
+        <title id="svg-title">Cute double-sided paper-cut template with Tom chasing Jerry</title>
+        <desc id="svg-desc">A4 printable color paper-cut template with mirrored front and back panels, fold line, glue strip, registration marks, and optional detail cuts.</desc>
         <defs>
           <style>
             .page { fill: #ffffff; }
             .headline { font: 700 5px Arial, sans-serif; fill: #111111; }
-            .label { font: 3.1px Arial, sans-serif; fill: #111111; }
+            .label { font: 3px Arial, sans-serif; fill: #111111; }
             .tiny { font: 2.35px Arial, sans-serif; fill: #333333; }
-            .backing { fill: #fff4d6; stroke: #111111; stroke-width: 0.95; stroke-linejoin: round; stroke-linecap: round; }
-            .tom-fur { fill: #7f98a7; stroke: #111111; stroke-width: 0.42; stroke-linejoin: round; stroke-linecap: round; }
-            .tom-shadow { fill: #6f8795; stroke: #111111; stroke-width: 0.35; stroke-linejoin: round; stroke-linecap: round; }
-            .tom-light { fill: #f7f1e6; stroke: #111111; stroke-width: 0.32; stroke-linejoin: round; stroke-linecap: round; }
-            .tom-ear { fill: #eda3ad; stroke: #111111; stroke-width: 0.28; stroke-linejoin: round; stroke-linecap: round; }
-            .tom-eye { fill: #f8db56; stroke: #111111; stroke-width: 0.25; }
-            .jerry-fur { fill: #a76635; stroke: #111111; stroke-width: 0.36; stroke-linejoin: round; stroke-linecap: round; }
-            .jerry-light { fill: #f4c389; stroke: #111111; stroke-width: 0.28; stroke-linejoin: round; stroke-linecap: round; }
-            .jerry-ear { fill: #f1b287; stroke: #111111; stroke-width: 0.24; }
-            .detail { fill: none; stroke: #111111; stroke-width: 0.24; stroke-linecap: round; stroke-linejoin: round; }
-            .whisker { fill: none; stroke: #111111; stroke-width: 0.18; stroke-linecap: round; }
-            .optional-cut { fill: none; stroke: #c63329; stroke-width: 0.42; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1.6 1.1; }
+            .backing { fill: #fff0c8; stroke: #111111; stroke-width: 0.95; stroke-linejoin: round; stroke-linecap: round; }
+            .tom { fill: #7d95a3; stroke: #111111; stroke-width: 0.38; stroke-linejoin: round; stroke-linecap: round; }
+            .tom-dark { fill: #667f8d; stroke: #111111; stroke-width: 0.32; stroke-linejoin: round; stroke-linecap: round; }
+            .tom-white { fill: #fff7eb; stroke: #111111; stroke-width: 0.28; stroke-linejoin: round; stroke-linecap: round; }
+            .tom-ear { fill: #ef9aa9; stroke: #111111; stroke-width: 0.24; stroke-linejoin: round; }
+            .tom-eye { fill: #ffe066; stroke: #111111; stroke-width: 0.24; }
+            .jerry { fill: #a96331; stroke: #111111; stroke-width: 0.34; stroke-linejoin: round; stroke-linecap: round; }
+            .jerry-light { fill: #f2bf83; stroke: #111111; stroke-width: 0.24; stroke-linejoin: round; stroke-linecap: round; }
+            .jerry-ear { fill: #efad81; stroke: #111111; stroke-width: 0.22; }
+            .line { fill: none; stroke: #111111; stroke-width: 0.23; stroke-linecap: round; stroke-linejoin: round; }
+            .thin { fill: none; stroke: #111111; stroke-width: 0.17; stroke-linecap: round; }
+            .motion { fill: none; stroke: #5d7fa3; stroke-width: 0.32; stroke-linecap: round; stroke-dasharray: 1.2 0.9; }
+            .optional { fill: none; stroke: #c9352c; stroke-width: 0.42; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1.6 1.1; }
             .fold { fill: none; stroke: #2368c9; stroke-width: 0.5; stroke-dasharray: 3 2; }
             .glue { fill: #d9d9d9; stroke: #777777; stroke-width: 0.25; stroke-dasharray: 1.3 1.1; opacity: 0.78; }
             .mark { fill: none; stroke: #111111; stroke-width: 0.26; }
-            .motion { fill: none; stroke: #4e6f91; stroke-width: 0.32; stroke-linecap: round; stroke-dasharray: 1.2 0.9; }
           </style>
 
           <g id="registration-mark">
@@ -154,91 +116,94 @@
             <path class="mark" d="M-3 0H3M0 -3V3"/>
           </g>
 
-          <g id="chase-template">
+          <g id="tom-jerry-chase">
             <path class="backing" d="
-              M27.5 49.5
-              C35.5 35.2 58.8 39.0 68.4 55.0
-              C77.8 49.0 92.2 54.3 96.7 66.1
-              C101.0 77.4 95.9 90.3 84.0 94.4
-              C88.0 104.8 86.8 117.9 80.2 129.0
-              C84.6 132.6 88.5 136.9 91.5 141.8
-              C96.8 133.4 109.8 134.1 114.4 142.5
-              C119.0 150.8 112.7 161.2 103.1 161.0
-              C99.8 168.8 91.6 173.1 83.6 170.0
-              C77.2 181.8 64.9 188.7 50.8 187.6
-              C34.9 186.4 22.7 175.2 18.2 159.1
-              C7.3 153.8 6.2 139.0 15.4 132.1
-              C11.2 116.0 15.0 99.9 25.0 90.4
-              L21.3 66.6
-              L32.8 75.4
-              C31.4 65.2 29.6 56.5 27.5 49.5
+              M20 53
+              C28 32 59 33 70 52
+              C82 49 93 58 94 70
+              C95 81 90 91 80 96
+              C86 106 88 119 85 132
+              C91 133 99 136 105 141
+              C111 129 129 133 132 147
+              C135 159 126 170 114 169
+              C107 181 91 183 81 174
+              C73 188 56 195 40 190
+              C26 186 17 174 15 159
+              C5 153 6 138 16 133
+              C12 117 15 101 25 91
+              L20 66
+              L32 74
+              C28 65 24 58 20 53
               Z"/>
 
-            <path class="tom-shadow" d="M20.4 139.2C9.7 140.4 6.2 152.8 15.3 158.5C22.5 163.0 31.7 158.5 33.1 149.8C29.3 143.5 25.5 140.0 20.4 139.2Z"/>
-            <path class="tom-fur" d="M17.6 136.4C8.7 131.4 8.2 118.7 16.4 112.5C23.2 107.5 33.0 110.2 36.2 118.0C29.2 122.0 23.6 128.4 17.6 136.4Z"/>
-            <ellipse class="tom-fur" cx="49.0" cy="139.0" rx="23.8" ry="39.6" transform="rotate(-7 49 139)"/>
-            <ellipse class="tom-light" cx="52.2" cy="145.0" rx="13.0" ry="25.8" transform="rotate(-7 52.2 145)"/>
-            <path class="tom-fur" d="M29.2 162.2C23.9 168.9 24.5 177.4 31.1 179.0C37.4 180.5 42.0 174.3 38.6 166.3Z"/>
-            <path class="tom-fur" d="M61.4 163.7C66.9 171.8 75.2 174.1 78.7 168.5C82.0 163.3 77.0 157.2 66.7 155.9Z"/>
-            <path class="tom-fur" d="M67.4 121.6C80.1 115.7 91.0 117.3 94.0 124.0C87.3 130.9 75.4 132.2 64.5 126.7Z"/>
-            <path class="tom-light" d="M83.4 121.7C88.6 120.9 92.5 122.1 94.0 124.0C91.6 127.0 86.0 128.2 80.9 126.2Z"/>
-            <path class="tom-fur" d="M31.0 121.0C22.8 118.3 16.7 121.1 15.0 126.0C19.2 130.7 28.8 131.0 36.8 126.0Z"/>
-            <path class="tom-light" d="M18.1 124.6C20.4 121.7 25.0 121.2 30.0 122.7C26.8 126.5 21.0 127.2 18.1 124.6Z"/>
-            <path class="tom-fur" d="M27.8 80.6C20.2 71.6 18.0 55.4 23.4 43.3L40.7 62.0Z"/>
-            <path class="tom-ear" d="M27.2 58.4C26.1 53.2 26.4 49.0 28.7 45.1L36.2 61.0Z"/>
-            <path class="tom-fur" d="M68.0 79.5C74.0 68.4 77.4 55.1 74.5 44.2L58.4 63.0Z"/>
-            <path class="tom-ear" d="M67.6 60.5C69.8 55.6 70.8 51.2 69.8 47.1L61.8 63.4Z"/>
-            <ellipse class="tom-fur" cx="49.2" cy="84.6" rx="26.8" ry="24.5"/>
-            <ellipse class="tom-light" cx="41.7" cy="94.0" rx="8.8" ry="9.4"/>
-            <ellipse class="tom-light" cx="57.7" cy="94.0" rx="9.0" ry="9.4"/>
-            <ellipse class="tom-eye" cx="42.6" cy="83.3" rx="5.1" ry="7.0"/>
-            <ellipse class="tom-eye" cx="57.0" cy="83.3" rx="5.1" ry="7.0"/>
-            <ellipse cx="43.5" cy="84.4" rx="1.7" ry="3.1" fill="#111111"/>
-            <ellipse cx="56.2" cy="84.4" rx="1.7" ry="3.1" fill="#111111"/>
-            <path class="detail" d="M36.8 75.8C41.0 72.9 46.0 72.7 49.0 75.6"/>
-            <path class="detail" d="M52.6 75.8C56.8 72.9 61.8 73.1 65.0 76.2"/>
-            <path d="M48.6 94.1C51.5 92.6 54.6 92.8 57.1 94.2C55.1 97.7 50.7 97.6 48.6 94.1Z" fill="#2d1c1a" stroke="#111111" stroke-width="0.25"/>
-            <path class="detail" d="M52.7 98.0C49.8 103.7 42.4 104.7 37.8 100.2"/>
-            <path class="detail" d="M54.0 98.0C57.9 103.6 65.2 103.6 69.2 99.4"/>
-            <path class="whisker" d="M41.7 93.7L29.5 90.4M42.0 96.7L28.1 96.9M41.5 99.7L29.7 103.5"/>
-            <path class="whisker" d="M58.9 93.7L71.8 90.5M59.0 96.7L73.6 96.9M58.7 99.6L71.5 103.7"/>
+            <path class="tom-dark" d="M24 136C13 137 9 150 18 157C26 163 37 158 38 148C35 141 30 137 24 136Z"/>
+            <path class="tom" d="M36 139C30 154 33 173 44 183C53 190 66 185 71 173C78 156 73 130 61 118C51 108 40 119 36 139Z"/>
+            <ellipse class="tom-white" cx="54" cy="150" rx="11" ry="25" transform="rotate(-8 54 150)"/>
+            <path class="tom" d="M31 121C21 118 15 122 13 128C18 134 31 134 41 126Z"/>
+            <path class="tom-white" d="M18 126C21 122 27 122 33 124C29 129 22 130 18 126Z"/>
+            <path class="tom" d="M68 122C81 114 92 116 96 124C91 132 76 134 64 127Z"/>
+            <path class="tom-white" d="M83 122C89 120 94 122 96 124C93 128 86 130 80 126Z"/>
+            <path class="tom" d="M31 165C25 172 26 180 33 181C39 182 43 176 39 168Z"/>
+            <path class="tom" d="M63 164C70 173 80 175 83 168C85 162 77 157 67 158Z"/>
+            <path class="tom" d="M65 145C72 139 81 137 88 141C86 148 77 153 67 151Z"/>
+            <ellipse class="tom-white" cx="86" cy="141" rx="4.8" ry="4.1" transform="rotate(12 86 141)"/>
+            <path class="tom" d="M33 145C27 139 19 137 13 140C15 147 24 151 34 150Z"/>
+            <ellipse class="tom-white" cx="13.4" cy="140" rx="4.6" ry="4.0" transform="rotate(-16 13.4 140)"/>
+            <path class="tom" d="M31 79C21 69 18 53 24 40L42 60Z"/>
+            <path class="tom-ear" d="M27 58C26 52 27 48 29 44L37 61Z"/>
+            <path class="tom" d="M66 78C73 67 76 53 73 41L57 60Z"/>
+            <path class="tom-ear" d="M66 58C69 52 70 48 69 44L61 61Z"/>
+            <ellipse class="tom" cx="49" cy="84" rx="27" ry="24"/>
+            <ellipse class="tom-white" cx="40.5" cy="95" rx="8.7" ry="9.8"/>
+            <ellipse class="tom-white" cx="56" cy="95" rx="8.7" ry="9.8"/>
+            <ellipse class="tom-eye" cx="42" cy="83" rx="5.0" ry="7.0"/>
+            <ellipse class="tom-eye" cx="56" cy="83" rx="5.0" ry="7.0"/>
+            <ellipse cx="44" cy="84" rx="1.6" ry="3.0" fill="#111111"/>
+            <ellipse cx="58" cy="84" rx="1.6" ry="3.0" fill="#111111"/>
+            <path class="line" d="M36 76C40 73 45 73 48 76M51 76C55 73 61 74 64 77"/>
+            <ellipse cx="49" cy="94.2" rx="3.0" ry="2.1" fill="#151515" stroke="#111111" stroke-width="0.2"/>
+            <path class="line" d="M49 96.2V99.5"/>
+            <path class="line" d="M49 99.5C45 105 37 104 34 99.5"/>
+            <path class="line" d="M49 99.5C54 105 63 103 66 98.8"/>
+            <path class="thin" d="M41 94L28 91M41 97L27 97M41 100L29 104"/>
+            <path class="thin" d="M57 94L70 91M57 97L72 97M57 100L70 104"/>
+            <path class="tom" d="M27 154C19 158 14 166 15 174" fill="none" stroke="#7d95a3" stroke-width="2.6"/>
 
-            <path class="jerry-fur" d="M103.6 153.5C116.0 150.0 117.2 136.9 105.8 134.4C96.5 132.4 89.1 141.3 92.4 150.2Z"/>
-            <path class="jerry-fur" d="M98.8 158.4C111.0 158.4 116.8 168.0 110.9 174.2C105.3 180.0 94.2 175.8 91.6 165.4Z"/>
-            <path class="jerry-fur" d="M83.5 148.5C79.8 159.2 84.4 170.7 93.0 172.6C101.7 174.5 108.8 166.2 106.6 154.8C104.4 143.6 87.7 136.3 83.5 148.5Z"/>
-            <ellipse class="jerry-light" cx="95.0" cy="159.2" rx="6.3" ry="11.2" transform="rotate(-13 95 159.2)"/>
-            <circle class="jerry-fur" cx="94.6" cy="137.2" r="12.4"/>
-            <circle class="jerry-ear" cx="84.4" cy="130.6" r="6.6"/>
-            <circle class="jerry-ear" cx="104.6" cy="128.8" r="6.3"/>
-            <ellipse class="jerry-light" cx="95.2" cy="140.4" rx="7.8" ry="6.6"/>
-            <ellipse cx="91.4" cy="134.8" rx="1.4" ry="2.2" fill="#111111"/>
-            <ellipse cx="99.1" cy="134.2" rx="1.4" ry="2.2" fill="#111111"/>
-            <path d="M96.0 141.0C97.9 140.0 100.0 140.0 101.5 141.1C100.1 143.2 97.4 143.0 96.0 141.0Z" fill="#331c17"/>
-            <path class="detail" d="M97.8 143.3C95.5 146.0 91.2 146.4 88.4 144.3"/>
-            <path class="jerry-fur" d="M86.9 160.0C79.8 159.0 75.1 162.5 75.2 167.6C80.5 169.8 86.4 167.8 90.8 162.8Z"/>
-            <path class="jerry-fur" d="M100.7 166.8C106.4 170.8 111.7 171.4 116.1 168.8C113.9 163.8 106.2 162.8 99.8 163.6Z"/>
-            <path class="jerry-fur" d="M105.8 154.7C116.3 151.9 120.8 143.1 117.2 137.8C110.2 138.5 103.7 144.5 101.7 153.2Z"/>
-            <path class="jerry-fur" d="M87.4 147.6C80.0 142.1 72.0 141.4 68.3 146.4C73.4 151.4 80.2 153.0 88.0 150.8Z"/>
-            <path class="jerry-fur" d="M104.6 160.4C118.8 155.9 123.2 144.5 116.7 139.1" fill="none" stroke="#a76635" stroke-width="2.1" stroke-linecap="round"/>
-            <path class="detail" d="M91.3 128.2C94.6 126.2 98.8 126.1 101.9 128.0"/>
-            <path class="whisker" d="M90.8 141.3L82.0 139.4M90.7 143.4L82.5 144.5M100.8 140.7L109.2 138.0M100.8 142.8L109.5 143.8"/>
+            <path class="jerry" d="M96 151C93 162 99 173 108 174C117 175 124 166 121 154C118 142 100 138 96 151Z"/>
+            <ellipse class="jerry-light" cx="109" cy="159" rx="6.3" ry="10.2" transform="rotate(-18 109 159)"/>
+            <circle class="jerry" cx="109" cy="133" r="12.0"/>
+            <circle class="jerry-ear" cx="100" cy="125" r="6.4"/>
+            <circle class="jerry-ear" cx="119" cy="125" r="6.0"/>
+            <ellipse class="jerry-light" cx="109" cy="137" rx="7.4" ry="6.2"/>
+            <ellipse cx="105.2" cy="131.5" rx="1.3" ry="2.1" fill="#111111"/>
+            <ellipse cx="113.0" cy="131.4" rx="1.3" ry="2.1" fill="#111111"/>
+            <path d="M107.5 139.2C109.5 138.1 112.0 138.2 113.5 139.5C112.2 141.8 109.0 141.6 107.5 139.2Z" fill="#311913"/>
+            <path class="line" d="M110 142C107 146 101 146 98 143"/>
+            <path class="jerry" d="M101 158C92 156 86 160 86 167C93 169 100 166 104 160Z"/>
+            <path class="jerry" d="M116 162C123 165 128 163 130 157C125 154 119 156 115 160Z"/>
+            <path class="jerry" d="M104 169C101 176 104 182 110 183C114 178 113 172 108 168Z"/>
+            <path class="jerry" d="M119 170C125 175 132 174 135 169C132 164 124 164 118 167Z"/>
+            <path class="jerry" d="M120 157C132 153 136 143 130 137" fill="none" stroke="#a96331" stroke-width="2.2" stroke-linecap="round"/>
+            <path class="line" d="M103 126C107 124 113 124 117 126"/>
+            <path class="thin" d="M104 139L95 137M104 141L95 142M114 139L123 137M114 141L123 142"/>
 
-            <path class="motion" d="M25.0 112.0C19.0 107.0 16.6 101.4 17.4 95.8"/>
-            <path class="motion" d="M66.4 116.1C73.5 111.5 81.4 109.8 89.4 111.0"/>
-            <path class="motion" d="M74.5 150.2C67.2 153.3 60.8 153.1 55.1 149.6"/>
-            <path class="optional-cut" d="M31.8 77.8C38.0 75.3 44.6 76.1 49.5 80.2"/>
-            <path class="optional-cut" d="M50.0 111.2C55.4 114.0 62.7 112.2 66.0 107.0"/>
-            <path class="optional-cut" d="M90.4 148.2C94.8 151.2 101.2 150.0 104.3 145.4"/>
+            <path class="motion" d="M18 112C13 107 12 101 15 96"/>
+            <path class="motion" d="M78 112C87 107 96 107 104 111"/>
+            <path class="motion" d="M84 168C77 171 70 170 64 166"/>
+            <path class="motion" d="M123 149C128 146 131 142 132 137"/>
+            <path class="optional" d="M35 113C42 118 54 118 63 112"/>
+            <path class="optional" d="M102 148C107 151 115 150 119 145"/>
+            <path class="optional" d="M32 78C38 75 45 76 50 81"/>
 
             <use href="#registration-mark" x="24" y="44"/>
-            <use href="#registration-mark" x="111" y="179"/>
+            <use href="#registration-mark" x="119" y="183"/>
           </g>
         </defs>
 
         <rect class="page" x="0" y="0" width="210" height="297"/>
 
-        <text class="headline" x="105" y="15" text-anchor="middle">Color double-sided paper-cut: classic gray cat and brown mouse chase</text>
-        <text class="tiny" x="105" y="22" text-anchor="middle">Print A4 at 100%. Blue dashed line = fold. Gray strip = glue. Cut around the cream backing outline.</text>
+        <text class="headline" x="105" y="15" text-anchor="middle">Cute double-sided paper-cut: Tom chasing Jerry</text>
+        <text class="tiny" x="105" y="22" text-anchor="middle">Print A4 at 100%. Blue dashed line = fold. Gray strip = glue. Cut the cream backing outline last.</text>
 
         <line class="fold" x1="105" y1="31" x2="105" y2="268"/>
         <rect class="glue" x="101.7" y="35" width="6.6" height="226" rx="1.2"/>
@@ -246,23 +211,23 @@
 
         <text class="label" x="54" y="37" text-anchor="middle">Front</text>
         <text class="label" x="156" y="37" text-anchor="middle">Back mirror</text>
-        <use href="#chase-template" transform="translate(4 38) scale(0.78)"/>
-        <use href="#chase-template" transform="translate(210 0) scale(-1 1) translate(4 38) scale(0.78)"/>
+        <use href="#tom-jerry-chase" transform="translate(2 38) scale(0.76)"/>
+        <use href="#tom-jerry-chase" transform="translate(210 0) scale(-1 1) translate(2 38) scale(0.76)"/>
 
         <g transform="translate(18 258)">
           <line x1="0" y1="0" x2="13" y2="0" stroke="#111111" stroke-width="0.95"/>
           <text class="tiny" x="16" y="0.9">Black outer contour: final cut</text>
-          <line x1="0" y1="8" x2="13" y2="8" stroke="#c63329" stroke-width="0.42" stroke-dasharray="1.6 1.1"/>
-          <text class="tiny" x="16" y="8.9">Red dashed: optional craft-knife details</text>
+          <line x1="0" y1="8" x2="13" y2="8" stroke="#c9352c" stroke-width="0.42" stroke-dasharray="1.6 1.1"/>
+          <text class="tiny" x="16" y="8.9">Red dashed: optional detail cuts</text>
           <line x1="0" y1="16" x2="13" y2="16" stroke="#2368c9" stroke-width="0.5" stroke-dasharray="3 2"/>
           <text class="tiny" x="16" y="16.9">Blue dashed: score and fold</text>
         </g>
 
         <g transform="translate(122 256)">
           <text class="tiny" x="0" y="0">Tips:</text>
-          <text class="tiny" x="0" y="6">1. Cut red details first if you want openwork.</text>
+          <text class="tiny" x="0" y="6">1. Cut red details first if needed.</text>
           <text class="tiny" x="0" y="12">2. Align round marks before gluing.</text>
-          <text class="tiny" x="0" y="18">3. Cut the cream outer outline last.</text>
+          <text class="tiny" x="0" y="18">3. Cut the cream outline last.</text>
         </g>
       </svg>
     </section>
