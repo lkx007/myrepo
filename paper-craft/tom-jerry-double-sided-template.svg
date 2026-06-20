@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" role="img" aria-labelledby="title desc">
   <title id="title">Tom and Jerry inspired double-sided paper-cut template</title>
   <desc id="desc">A4 printable paper-cut template with mirrored front and back panels, cut lines, fold line, glue area, and optional inner details.</desc>
@@ -84,7 +83,7 @@
 
   <rect class="page" x="0" y="0" width="210" height="297"/>
 
-  <text class="title" x="105" y="15" text-anchor="middle">Double-sided paper-cut: Tom &amp; Jerry chase</text>
+  <text class="title" x="105" y="15" text-anchor="middle">Double-sided paper-cut: Tom and Jerry chase</text>
   <text class="tiny" x="105" y="22" text-anchor="middle">Print A4 at 100%. Blue dashed line = fold. Gray strip = glue. Black outline = cut. Red dashed details = optional cutouts.</text>
 
   <line class="fold" x1="105" y1="31" x2="105" y2="268"/>
